@@ -34,14 +34,13 @@ cd laravel-ecommerce
 composer install
 ```
 
-3. Copiar arquivo de ambiente e gerar APP_KEY
+3. gerar APP_KEY
 
 ```bash
-cp .env.example .env
 php artisan key:generate
 ```
 
-4. Configurar `.env`
+4. Verificar `.env`
 
 * Edite `.env` e configure as variáveis do banco de dados (`DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`) e `APP_URL` se necessário.
 
@@ -51,11 +50,9 @@ php artisan key:generate
 npm install
 # e compilar assets (modo dev):
 npm run dev
-# ou para produção:
-npm run build
 ```
 
-6. Migrar banco e popular (se houver seeders)
+6. Migrar banco e popular
 
 ```bash
 php artisan migrate
@@ -63,20 +60,7 @@ php artisan migrate
 php artisan db:seed
 ```
 
-7. Linkar storage (para imagens públicas)
-
-```bash
-php artisan storage:link
-```
-
-8. Permissões (Linux/Mac) — caso ocorra erro de escrita
-
-```bash
-sudo chown -R $USER:www-data storage bootstrap/cache
-chmod -R 775 storage bootstrap/cache
-```
-
-9. Rodar servidor local
+7. Rodar servidor local
 
 ```bash
 php artisan serve
@@ -137,3 +121,5 @@ Exemplos e instruções mais detalhadas estão disponíveis nesta documentação
 ## Licença
 
 MIT
+
+---
