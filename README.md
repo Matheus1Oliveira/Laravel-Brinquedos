@@ -23,7 +23,7 @@ Repositório adaptado por `Matheus1Oliveira` a partir do tutorial "Laravel 12 Si
 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/Peixoot/laravel-ecommerce.git
+https://github.com/Matheus1Oliveira/Laravel-Brinquedos.git
 cd laravel-ecommerce
 ```
 
